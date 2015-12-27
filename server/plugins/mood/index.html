@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>sample_collector</title>
+    <!--CSS generated from SASS 
+    -->
+    <link href="assets/css/main.css" rel="stylesheet">
+    <!--HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries 
+    -->
+    <!--if lt IE 9
+    script(src='https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js')
+    script(src='https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js')
+    -->
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+            <div class="col-md-5 col-md-offset-4">
+                <h3>Mood...</h3>
+            </div>
+      </div>
+      <div class="row" id="feelings" data-bind="visible: !done()">
+        <div class="col-md-5 col-md-offset-4">
+          <button type="button" class="btn btn-success" data-bind="click: good">Good</button>
+          <button type="button" class="btn btn-info" data-bind="click: motivated">Motivated</button>
+          <button type="button" class="btn btn-warning" data-bind="click: powerless">Powerless</button>
+          <button type="button" class="btn btn-danger" data-bind="click: depressive">Depressive</button>
+        </div>
+      </div>
+        <div class="row" id="feelings" data-bind="visible: done">
+        <div class="col-md-5 col-md-offset-4">
+            <h3>...tracked</h3>
+        </div>
+      </div>
+  </div>
+    
+    <script src="assets/js/require.min.js"></script>
+  </body>
+</html>
