@@ -1,0 +1,11 @@
+{
+  "name": "Private Information Archive2",
+  "description": "A private information archive that hosts your data in the Amazon cloud.",
+  "keywords": ["own your data", "private information archive"],
+  "website": "https://OwnYourData.eu",
+  "repository": "https://github.com/fabianekc/pia2",
+  "env": {
+    "BUILDPACK_URL": "https://github.com/ddollar/heroku-buildpack-multi.git"
+  },
+  "addons": ["mongolab:sandbox"]
+}
